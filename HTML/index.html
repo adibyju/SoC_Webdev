@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoC_Assignment</title>
+  </head>
+  <style>
+    body {
+      font-family: Cambria;
+      font-size: 16px;
+      margin: 0px;
+      border: 0px;
+    }
+
+    .table1 {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .img {
+      width: 20vw;
+      padding: 20px;
+    }
+
+    .cc {
+      width: 30vw;
+    }
+
+    .login-id {
+      width: 20vw;
+    }
+
+    .password {
+      width: 20vw;
+    }
+
+    .loginbtn {
+      width: 10vw;
+      padding-top: 18px;
+      padding-right: 25px;
+    }
+
+    .table2 {
+      width: 100%;
+      border-spacing: 5px;
+      border: 1px solid black;
+      line-height: 0px;
+    }
+
+    .table2 th {
+      border: 1px solid black;
+    }
+
+    .table3 {
+      width: 100%;
+      border-spacing: 5px;
+      border: 1px solid black;
+    }
+
+    .table3 td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+
+    th.violet {
+      text-align: left;
+      color: white;
+      background-color: #4e387e;
+    }
+
+    h1 {
+      font-family: "Times New Roman";
+      font-size: 32px;
+    }
+
+    .subheadings {
+      font-size: 18px;
+    }
+
+    h3 {
+      font-family: Arial;
+      font-size: 15px;
+    }
+
+    .small-caps {
+      font-variant: small-caps;
+    }
+
+    .grey {
+      color: #778899;
+      font-size: 13px;
+    }
+
+    .grey2 {
+      color: #517492;
+    }
+
+    .red {
+      color: red;
+    }
+
+    .blue {
+      color: blue;
+    }
+
+    a:link {
+      color: blue;
+    }
+
+    .centerAlign {
+      text-align: center;
+    }
+
+    .monospace {
+      font-family: monospace;
+      font-size: 13px;
+    }
+
+    .login {
+      width: 133.32px;
+      height: 26.66px;
+    }
+
+    .halfwidth {
+      width: 50%;
+    }
+
+    .normal {
+      font-weight: normal;
+    }
+
+    .text-align {
+      text-align: left;
+    }
+  </style>
+  <body>
+    <!--The whole website is represented as tables-->
+    <table class="table1">
+      <!--Header-->
+      <header>
+        <tr>
+          <th class="violet img">
+            <img
+              src="https://www.geocerts.com/assets/site-seals/digicert-site-seal-2021-8fec01d47ebb2896103332bb1201959160b33800188cfa94e39e46b013d78dfe.png"
+              alt="digicert secured"
+            />
+          </th>
+          <th class="violet cc">
+            <span class="small-caps"><h1>Computer Center</h1></span>
+          </th>
+          <th class="violet ldap-id">
+            <span class="small-caps normal text-align"
+              ><label for="ldapid">Ldap-id:</label></span
+            ><br />
+            <input type="text" id="ldapid" name="ldapid" size="25" />
+          </th>
+          <th class="violet password">
+            <span class="small-caps normal text-align"
+              ><label for="password">Password:</label></span
+            ><br />
+            <input type="text" id="password" name="password" size="25" />
+          </th>
+          <th class="bottom-align violet loginbtn">
+            <input class="login" type="button" value="Login" />
+          </th>
+        </tr>
+      </header>
+    </table>
+    <!--Downtime remainder-->
+    <table class="table2">
+      <tr>
+        <th colspan="2" class="centerAlign red">
+          <h3><strong>### No planned downtime ###</strong></h3>
+        </th>
+      </tr>
+    </table>
+    <!--Main content-->
+    <table class="table3">
+      <tr>
+        <td class="halfwidth">
+          <span class="small-caps red subheadings"
+            ><strong>Beware of Phishing Attacks:</strong></span
+          ><br /><br />
+
+          - Do not give your
+          <strong>LDAP USERID & PASSWORD</strong>
+          to anyone.<br />
+          - Do not enter LDAP login information in any pop up widow.<br />
+          - Do not reply to any mail asking your login information for any
+          <br />reason. <br />- Do not enter your LDAP login information on any
+          unknown website.<br />
+          - Phishing is a fraudulent attempt, usually made through email seeking
+          <br />your userid, password and personal information.<br />
+          - If you receive any such email, Please report
+          <a href="#">here</a>
+          immediately.<br />
+          - Immediately change your passwords if you have accidentally revealed
+          <br />your credentials.<br />
+          <strong>- Computer Center never asks you for such information.</strong
+          ><br /><br />
+
+          <span class="small-caps blue subheadings"
+            ><strong>Example of Phishing Email:</strong></span
+          ><br /><br />
+
+          <span class="grey"
+            >From: support@iitb.ac.in <br />Sent: Thu, Mar 08, 2012
+            <br />Subject: UPGRADE EMAIL ACCOUNT <br />We are currently
+            upgrading our Server for our Account Holders. In order to upgrade
+            your account, you need <br />to assist us by sending the information
+            below or else your Account might be lost. <br />Provide the below
+            information : <br />User Name : <br />Pass Word : <br />Regards,
+            <br />ADMIN, IIT Bombay</span
+          ><br />
+        </td>
+        <td class="halfwidth">
+          <span class="small-caps red subheadings"
+            ><strong>Online IT Agreement/Policy:</strong></span
+          ><br /><br />
+
+          - All new students, staff & faculty members must read and accept the
+          <br />online IT agreement/policy. <br />- IT services are made
+          available to users only upon acceptance of the <br />IT undertaking.
+          <br />- The IT policy applies to all users of the Institute with or
+          without <br />his knowledge about IT policy and violations will be
+          dealt with strictly.<br /><br />
+
+          <span class="small-caps subheadings"
+            ><strong
+              >- To learn more and sign online IT Policy, click
+              <a href="#" class="red">here</a></strong
+            ></span
+          ><br /><br />
+
+          <span class="small-caps blue subheadings"
+            ><strong>Some Useful Links</strong>:</span
+          ><br /><br />
+
+          -
+          <a href="#">Getting Started</a>
+          <span class="grey2">(Faculty, Staff & Student)</span>
+          <br />-
+          <a href="#">GPO-Webmail</a>
+          <br />-
+          <a href="#">FTP-Portal</a>
+          <br />- <a href="#">Report A Problem</a><br /><br />
+
+          <span class="small-caps blue subheadings"
+            ><strong>CC's HelpDesk:</strong></span
+          ><br /><br />
+
+          - You can visit CC's HelpDesk between
+          <br />11:00 am - 1:00 pm & 3:30 pm - 5:30 pm
+          <br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+            class="monospace"
+            >At</span
+          >
+          <br /><br />Ground Floor, <br />New Computer Center Building,
+          <br />IIT Bombay.
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

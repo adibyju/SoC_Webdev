@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoC_Assignment</title>
+  </head>
+
+
+
+  <body class="light-theme">
+    <!--The whole website is represented as tables-->
+    <table class="table1">
+      <!--Header-->
+      <header>
+        <tr>
+          <th class="violet img">
+            <img src="https://www.geocerts.com/assets/site-seals/digicert-site-seal-2021-8fec01d47ebb2896103332bb1201959160b33800188cfa94e39e46b013d78dfe.png" alt="digicert secured" />
+          </th>
+          <th class="violet cc">
+            <span class="small-caps">
+              <h1 id="cc">Computer Center</h1>
+            </span>
+          </th>
+          <form id="myForm" name="loginForm" onsubmit="notEmpty()" method="get">
+            <th class="violet ldap-id">
+              <span id="ldapidlabel" class="small-caps normal text-align"><label for="ldapid">Ldap-id:</label></span><br />
+              <input type="text" id="ldapid" name="ldapid" size="25" pattern="[0-9]+" required />
+            </th>
+            <th class="violet password">
+              <span id="passwordlabel" class="small-caps normal text-align"><label for="password">Password:</label></span><br />
+              <input type="text" id="password" name="password" size="25" required />
+            </th>
+        
+            <th class="bottom-align violet loginbtn">
+                <button id="logbutton" class="login" type="submit">Login</button>
+              <!-- <input class="login" type="submit" value="Login" /> -->
+            </th>
+        </form>
+          
+        </tr>
+      </header>
+    </table>
+    <!--Downtime remainder + Dark mode-->
+    <table id="table2" class="table2" height="50">
+      <tr>
+        <th id="table2-th" colspan="2" class="red">
+          <span id="dtrem" class="centerAlign npd blink"><strong>### No planned downtime ###</strong></span>
+          <span class="tb">
+            <label style="float: right" class="tbutton">
+              <input id="toggle-button" type="checkbox" onchange="darkMode()" />
+              <span class="slider round"></span>
+            </label>
+          </span>
+          <span id="dark-mode">Dark Mode:</span>
+        </th>
+      </tr>
+    </table>
+    <!--Main content-->
+    <div id="div3">
+    <table class="table3">
+      <tr>
+        <td class="halfwidth">
+         <div class="displaymode">
+         
+         <span class="small-caps red subheadings"><strong>Beware of Phishing Attacks:</strong></span>
+          </div><br /><br />
+          <span class="white"> - Do not give your
+            <strong>LDAP USERID & PASSWORD</strong>
+            to anyone.<br />
+            - Do not enter LDAP login information in any pop up widow.<br />
+            - Do not reply to any mail asking your login information for any
+            <br />reason. <br />- Do not enter your LDAP login information on any
+            unknown website.<br />
+            - Phishing is a fraudulent attempt, usually made through email seeking
+            <br />your userid, password and personal information.<br />
+            - If you receive any such email, Please report
+            <a href="#">here</a>
+            immediately.<br />
+            - Immediately change your passwords if you have accidentally revealed
+            <br />your credentials.<br />
+            <strong>- Computer Center never asks you for such information.</strong></span><br /><br />
+
+          <span class="small-caps blue subheadings"><strong>Example of Phishing Email:</strong></span><br /><br />
+
+          <span class="grey">From: support@iitb.ac.in <br />Sent: Thu, Mar 08, 2012
+            <br />Subject: UPGRADE EMAIL ACCOUNT <br />We are currently
+            upgrading our Server for our Account Holders. In order to upgrade
+            your account, you need <br />to assist us by sending the information
+            below or else your Account might be lost. <br />Provide the below
+            information : <br />User Name : <br />Pass Word : <br />Regards,
+            <br />ADMIN, IIT Bombay</span><br />
+        </td>
+        <td class="halfwidth">
+          <span class="small-caps red subheadings"><strong>Online IT Agreement/Policy:</strong></span><br /><br />
+
+          <span class="white">- All new students, staff & faculty members must read and accept the
+            <br />online IT agreement/policy. <br />- IT services are made
+            available to users only upon acceptance of the <br />IT undertaking.
+            <br />- The IT policy applies to all users of the Institute with or
+            without <br />his knowledge about IT policy and violations will be
+            dealt with strictly.<br /><br />
+
+            <span class="small-caps subheadings"><strong>- To learn more and sign online IT Policy, click </span>
+            <a href="#" class="red">here</a></strong></span><br /><br />
+
+          <span class="small-caps blue subheadings"><strong>Some Useful Links</strong>:</span><br /><br />
+
+          -
+          <a href="#">Getting Started</a>
+          <span class="grey2">(Faculty, Staff & Student)</span>
+          <br />-
+          <a href="#">GPO-Webmail</a>
+          <br />-
+          <a href="#">FTP-Portal</a>
+          <br />- <a href="#">Report A Problem</a><br /><br />
+
+          <span class="small-caps blue subheadings"><strong>CC's HelpDesk:</strong></span><br /><br />
+
+          <span class="white">- You can visit CC's HelpDesk between
+            <br />11:00 am - 1:00 pm & 3:30 pm - 5:30 pm
+            <br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="monospace">At</span>
+            <br /><br />Ground Floor, <br />New Computer Center Building,
+            <br />IIT Bombay.</span>
+        </td>
+      </tr>
+    </table>
+  </div>
+    
+  <style>
+    :root {
+    --black: #202225;
+    --darkgrey:  #2f3136;
+    --white: #ffffff;
+    --violet: #4e387e;
+    --lightgrey: #b9bbbe;
+    
+    }
+
+    .light-theme {
+      --bgColor: var(--white);
+      --topBgColor: var(--violet);
+      --textColor: var(--black);
+    }
+
+    .dark-theme {
+      --bgColor: var(--darkgrey);
+      --topBgColor: var(--black);
+      --textColor: var(--lightgrey);
+    }
+    body {
+      font-family: Cambria;
+      font-size: 16px;
+      margin: 0px;
+      border: 0px;
+      background-color: var(--bgColor);
+    }
+    
+    .white {
+      color: var(--textColor);
+    }
+
+    .table1 {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .img {
+      width: 20vw;
+      padding: 20px;
+    }
+
+    .cc {
+      width: 30vw;
+    }
+
+    .login-id {
+      width: 20vw;
+    }
+
+    .password {
+      width: 20vw;
+    }
+
+    .loginbtn {
+      width: 10vw;
+      padding-top: 18px;
+      padding-right: 25px;
+    }
+
+    .table2 {
+      width: 100%;
+      border-spacing: 5px;
+      border: 1px solid black;
+      line-height: 0px;
+    }
+
+    .table2 th {
+      border: 1px solid black;
+      padding-top: 10px;
+    }
+
+    .table3 {
+      width: 100%;
+      border-spacing: 5px;
+      border: 1px solid black;
+    }
+
+    .table3 td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+
+    th.violet {
+      text-align: left;
+      color: white;
+      background-color: var(--topBgColor);
+    }
+
+    h1 {
+      font-family: "Times New Roman";
+      font-size: 32px;
+    }
+
+    .subheadings {
+      font-size: 18px;
+    }
+
+    h3 {
+      font-family: Arial;
+      font-size: 15px;
+    }
+
+    .small-caps {
+      font-variant: small-caps;
+    }
+
+    .grey {
+      color: #778899;
+      font-size: 13px;
+    }
+
+    .grey2 {
+      color: #517492;
+    }
+
+    .red {
+      color: red;
+    }
+
+    .blue {
+      color: blue;
+    }
+
+    a:link {
+      color: blue;
+    }
+
+    .centerAlign {
+      text-align: center;
+    }
+
+    .monospace {
+      font-family: monospace;
+      font-size: 13px;
+    }
+
+    .login {
+      width: 133.32px;
+      height: 26.66px;
+    }
+
+    .halfwidth {
+      width: 50%;
+    }
+
+    .normal {
+      font-weight: normal;
+    }
+
+    .text-align {
+      text-align: left;
+    }
+
+    .tbutton {
+      position: relative;
+      display: inline-block;
+      width: 45px;
+      height: 25px;
+    }
+
+    .tbutton input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 3.5px solid #bdbdbd;
+      background-color: #f3f1f0;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 0px;
+      bottom: 0px;
+      box-shadow: 2px 2px 4px grey;
+      background-color: white;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+    }
+
+    input:checked + .slider {
+      background-color: #bdbdbd;
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #dddddd;
+    }
+
+    input:checked + .slider:before {
+      -webkit-transform: translateX(21px);
+      -ms-transform: translateX(21px);
+      transform: translateX(21px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+
+    .npd {
+      display: inline-block;
+      padding-top: 12px;
+    }
+
+    .tb {
+      display: inline-block;
+      float: right;
+      padding-top: -10px;
+      padding-right: 10px;
+      padding-bottom: 9px;
+    }
+
+    #dark-mode {
+      display: inline-block;
+      float: right;
+      padding-right: 5px;
+      padding-top: 12px;
+      color: #bdbdbd;
+    }
+
+    .login {
+        width: 133px;
+        height: 25px;
+    }
+
+  </style>
+
+  <script>
+  var logSuccess = false;
+    function notEmpty() {
+      logSuccess;
+  var x = document.forms["loginForm"]["ldapid"].value;
+  var y = document.forms["loginForm"]["password"].value;
+  if (Number(x) < 200000000 || Number(x) > 202000000) {
+    alert("LdapID must be between 200000000 and 202000000");
+    
+  }
+  else {
+    logSuccess = true;
+    loginSuccess();
+  }
+}
+
+var form = document.getElementById("myForm");
+function handleForm(event) { event.preventDefault(); } 
+form.addEventListener('submit', handleForm);
+
+
+function loginSuccess() {
+  
+  var x = document.getElementById("div3");
+  var y = document.getElementById("dtrem");
+  var z = document.getElementById("table2");
+  var a = document.getElementById("table2-th");
+  var b = document.getElementById("ldapid");
+  var c = document.getElementById("password");
+  var d = document.getElementById("cc");
+  var e = document.getElementById("logbutton");
+  var f = document.getElementById("myForm").elements[0].value;
+  var g = document.getElementById("myForm").elements[1].value;
+  var h = document.getElementById("ldapidlabel");
+  var i = document.getElementById("passwordlabel");
+
+
+  if (logSuccess){
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "inline-block";
+    z.style.border = "1px solid black";
+    a.style.border = "1px solid black";
+    b.style.display = "block";
+    b.value = "";
+    c.style.display = "block";
+    c.value = "";
+    d.innerHTML = "Computer Center";
+    e.innerHTML = "Login";
+    h.innerHTML = "Ldap-id:";
+    i.innerHTML = "Password:";
+
+  } else {
+    x.style.display = "none";
+    y.style.display = "none";
+    z.style.border = "1px solid transparent";
+    a.style.border = "1px solid transparent";
+    b.style.display = "none";
+    c.style.display = "none";
+    d.innerHTML = "Login Successful!";
+    e.innerHTML = "Logout";
+    h.innerHTML = "Ldap-id: " + f;
+    i.innerHTML = "Password: " + g;
+  }
+}
+}
+
+
+
+const themeSwitch = document.querySelectorAll("input")[2];
+
+themeSwitch.addEventListener("change", () => {
+  document.body.classList.toggle("dark-theme");
+});
+
+function darkMode() {
+
+  if (themeSwitch.checked == true) {
+
+    document.getElementById("dark-mode").innerHTML = "Light Mode:";
+
+  } else {
+
+    document.getElementById("dark-mode").innerHTML = "Dark Mode:";
+
+  }
+}
+
+
+
+  </script>
+  </body>
+
+</html>

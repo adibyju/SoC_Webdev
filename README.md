@@ -30,7 +30,7 @@ I love doing photoshop art as a hobby. So I thought why not make a website showc
 
 ### Obstacles I faced :-
 
-So this one was a little tough. The CSS sometimes just does not work. It's quite a hassle. I also had problems integrating JS with Angular framework. After disturbing my mentor with a lot of doubts and googling I finally got it right. Phew! 
+So this one was a little tough. The CSS sometimes just does not work. It's quite a hassle. I also had problems integrating JS with Angular framework. After disturbing my mentor with a lot of doubts and googling I finally got it right. Phew!
 
 ---
 
@@ -48,4 +48,4 @@ Studied HTML, CSS, JS and Angular but a lot more practise is required for perfec
 - Youtube tutorials by Hitesh Choudhary for markdown files
 - stackoverflow.com, css-tricks.com, tutorialspoint.com
 
->Change the world by being yourself!
+> Change the world by being yourself!

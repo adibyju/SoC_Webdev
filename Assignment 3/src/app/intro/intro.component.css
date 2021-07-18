@@ -1,0 +1,395 @@
+/* Styling for grid display */
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-self: center;
+  width: 100%;
+  padding-top: 120px;
+  padding-left: 240px;
+  padding-right: 90px;
+}
+
+.intro {
+  margin-bottom: 80px;
+  z-index: 1;
+}
+
+.intro p {
+  color: white;
+  font-family: "Microsoft Yi Baiti", "Arial", sans-serif;
+  font-size: 27px;
+  padding-left: 30px;
+}
+
+.fieryGuitar {
+  max-height: calc(100vh - 120px);
+}
+
+.blueFieryGuitar {
+  max-height: calc(100vh - 120px);
+}
+
+.fieryGuitar:hover {
+  max-height: calc(100vh - 120px);
+  filter: saturate(1.2) brightness(1.2);
+}
+
+/* For responsiveness */
+@media screen and (max-width: 1300px) {
+  .main {
+    padding-left: 170px;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .main {
+    padding-left: 100px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .main {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .main {
+    padding-left: 25px;
+  }
+  .guitar {
+    margin-left: -10px;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .main {
+    padding-left: 25px;
+  }
+  .guitar {
+    margin-left: -10px;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .main {
+    padding-left: 25px;
+  }
+  .guitar {
+    margin-left: -10px;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .main {
+    padding-left: 25px;
+  }
+  .guitar {
+    margin-left: -60px;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    padding-left: 25px;
+  }
+  .guitar {
+    margin-left: -100px;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    padding-left: 25px;
+  }
+  .guitar {
+    margin-left: -140px;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .main {
+    padding-left: 25px;
+  }
+  .guitar {
+    margin-left: -200px;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .main {
+    padding-left: 25px;
+  }
+  .guitar {
+    margin-left: -300px;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .main {
+    padding-left: 25px;
+  }
+  .guitar {
+    margin-left: -300px;
+    z-index: -1;
+    transform: scale(0.8);
+  }
+  .intro {
+    transform: scale(0.8);
+    margin-left: -20px;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .main {
+    padding-left: 25px;
+  }
+  .guitar {
+    margin-left: -350px;
+    z-index: -1;
+    transform: scale(0.75);
+  }
+  .intro {
+    transform: scale(0.75);
+    margin-left: -30px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .main {
+    padding-left: 25px;
+  }
+  .guitar {
+    margin-left: -350px;
+    z-index: -1;
+    transform: scale(0.75);
+  }
+  .intro {
+    transform: scale(0.75);
+    margin-left: -70px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .main {
+    padding-left: 25px;
+  }
+  .guitar {
+    margin-left: -360px;
+    z-index: -1;
+    transform: scale(0.7);
+  }
+  .intro {
+    transform: scale(0.65);
+    margin-left: -80px;
+  }
+  .intro p {
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .main {
+    padding-left: 25px;
+  }
+  .guitar {
+    margin-left: -360px;
+    z-index: -1;
+    transform: scale(0.6);
+  }
+  .intro {
+    transform: scale(0.6);
+    margin-left: -80px;
+  }
+  .intro p {
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .main {
+    padding-left: 25px;
+  }
+  .guitar {
+    margin-left: -380px;
+    z-index: -1;
+    transform: scale(0.6);
+  }
+  .intro {
+    transform: scale(0.6);
+    margin-left: -90px;
+  }
+  .intro p {
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .main {
+    padding-left: 20px;
+  }
+  .guitar {
+    margin-left: -400px;
+    z-index: -1;
+    transform: scale(0.5);
+  }
+  .intro {
+    transform: scale(0.5);
+    margin-left: -100px;
+  }
+  .intro p {
+    font-weight: bold;
+  }
+}
+
+.lbandh {
+  display: grid;
+  grid-template-columns: 1fr 1.55fr;
+  align-items: center;
+  justify-self: center;
+  width: 100%;
+  padding: 0 10vw;
+  margin: 0 0;
+  margin-bottom: 70px;
+}
+
+.lb-img img {
+  width: 31vw;
+}
+
+.lb-desc {
+  color: white;
+}
+
+.h-img img {
+  width: 48vw;
+  margin-top: -4px;
+}
+
+.h-img {
+  order: 2;
+}
+
+.h-desc {
+  order: 1;
+  color: white;
+}
+
+.lb-desc1 {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.lb-desc1 p {
+  font-family: "Papyrus", Arial, Helvetica, sans-serif;
+  font-size: 6vw;
+  text-align: center;
+  margin-bottom: 9vw;
+}
+
+.lb-desc2 {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.lb-desc2 p {
+  font-family: "Baskerville Old Face", "Times New Roman", Times, serif;
+  font-size: 3.5vw;
+}
+
+.h-desc1 {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.h-desc1 p {
+  font-family: "Papyrus", Arial, Helvetica, sans-serif;
+  font-size: 6vw;
+  text-align: center;
+  margin-bottom: 8vh;
+}
+
+.h-desc2 {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.h-desc2 p {
+  font-family: "Baskerville Old Face", "Times New Roman", Times, serif;
+  font-size: 3.5vw;
+}
+
+.lb-img img:hover {
+  filter: grayscale(0.5) brightness(1.1);
+}
+
+.h-img img:hover {
+  filter: grayscale(0.5) brightness(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .lbandh {
+    display: block;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .lb-img {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .lb-desc {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 85px;
+  }
+  .lb-img img {
+    width: 70vw;
+    height: auto;
+  }
+  .h-img {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .h-desc {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 85px;
+  }
+  .h-img img {
+    width: 70vw;
+    height: auto;
+  }
+  .lb-img img:hover {
+    width: 70vw;
+    height: auto;
+    filter: grayscale(0.5) brightness(1.1);
+  }
+  .h-img img:hover {
+    width: 70vw;
+    height: auto;
+    filter: grayscale(0.5) brightness(1.1);
+  }
+}

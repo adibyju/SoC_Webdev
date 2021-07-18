@@ -1,0 +1,322 @@
+/* For grid display */
+.contactme {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-self: center;
+  width: 100%;
+  padding: 0 8vw;
+  margin: 0 0;
+  margin-top: 8px;
+  height: 465px;
+}
+
+.contactform {
+  order: 1;
+}
+
+.contactform h3 {
+  color: white;
+  font-weight: normal;
+  font-family: "Microsoft Yi Baiti", "Arial", sans-serif;
+  font-size: 4.5rem;
+}
+
+.contactform label {
+  color: white;
+  font-family: "Microsoft Yi Baiti", "Arial", sans-serif;
+  font-size: 1.7rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#name,
+#emailaddress,
+#message {
+  width: 34vw;
+  height: 30px;
+  margin-top: 8px;
+}
+
+#message {
+  height: 120px;
+  resize: none;
+}
+
+.submitdiv {
+  width: 34vw;
+  justify-content: center;
+  text-align: center;
+}
+
+.submit {
+  width: 175px;
+  border-radius: 25px;
+  color: rgba(255, 255, 255, 0.69);
+  font-size: 1.3rem;
+  font-weight: bold;
+  background: linear-gradient(#c32300, black);
+  font-family: "Microsoft Yi Baiti", "Arial", sans-serif;
+  cursor: pointer;
+  border-style: solid;
+  border: none;
+  padding-bottom: 4px;
+  padding-top: 1px;
+}
+
+.submit:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.submit:active {
+  border-style: solid;
+  border: none;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  order: 2;
+}
+
+.image img {
+  float: right;
+  margin-left: 15vw;
+  width: 20vw;
+  height: 25vw;
+  filter: grayscale(100%);
+  transition: all 1.5s ease;
+}
+
+.image img:hover {
+  transform: scale(1.3);
+  filter: grayscale(0%);
+  transition: 1.5s ease;
+}
+
+.contactme hr {
+  width: 0px;
+  height: 410px;
+  border-left: 1px solid rgba(255, 255, 255, 0.69);
+  opacity: 69%;
+}
+
+/* For responsiveness */
+@media screen and (max-width: 840px) {
+  .contactme h3 {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactme {
+    display: block;
+    width: 100%;
+  }
+  .contactme h3 {
+    font-size: 4.5rem;
+  }
+  .contactform {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contactme hr {
+    display: none;
+  }
+  .image {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .image img {
+    margin-left: 0;
+    margin: 25px 0;
+    width: 50vw;
+    height: auto;
+    margin-bottom: 60px;
+  }
+  #name,
+  #emailaddress,
+  #message {
+    width: 65vw;
+    height: 30px;
+    margin-top: 8px;
+  }
+  #message {
+    height: 120px;
+    resize: none;
+  }
+  .submitdiv {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contactme {
+    display: block;
+    width: 100%;
+  }
+  .contactme h3 {
+    font-size: 3.5rem;
+  }
+  .contactform {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contactme hr {
+    display: none;
+  }
+  .image {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .image img {
+    margin-left: 0;
+    margin: 25px 0;
+    width: 60vw;
+    height: auto;
+    margin-bottom: 60px;
+  }
+  #name,
+  #emailaddress,
+  #message {
+    width: 75vw;
+    height: 30px;
+    margin-top: 8px;
+  }
+  #message {
+    height: 120px;
+    resize: none;
+  }
+  .submitdiv {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Footer styles */
+.footer {
+  display: flex;
+  padding: 5px 10px;
+}
+
+.hr {
+  width: 38vw;
+}
+
+.hr1 {
+  padding-left: 40px;
+}
+
+.hr2 {
+  padding-right: 40px;
+}
+
+.hr hr {
+  margin-top: 24px;
+  height: 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.69);
+}
+
+.footermiddle {
+  width: 24vw;
+  text-align: center;
+}
+
+footer a {
+  opacity: 69%;
+}
+
+footer a:hover {
+  opacity: 85%;
+}
+
+.footerizal {
+  opacity: 69%;
+}
+
+footer p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 69%;
+}
+
+footer a img {
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.facebook,
+.twitter {
+  margin-bottom: 3px;
+}
+
+/* For responsiveness */
+@media screen and (max-width: 1135px) {
+  .footermiddle {
+    width: 40vw;
+    text-align: center;
+  }
+  .hr {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 78vw;
+  }
+  .footermiddle {
+    width: 100%;
+    text-align: center;
+  }
+  .hr {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footermiddle {
+    width: 100%;
+    text-align: center;
+    transform: scale(0.8);
+  }
+  .hr {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer {
+    margin-top: 90vw;
+  }
+  .footermiddle {
+    width: 100%;
+    text-align: center;
+    transform: scale(0.8);
+  }
+  .hr {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .footer {
+    margin-top: 115vw;
+  }
+  .footermiddle {
+    width: 100%;
+    text-align: center;
+    transform: scale(0.8);
+  }
+  .hr {
+    display: none;
+  }
+}

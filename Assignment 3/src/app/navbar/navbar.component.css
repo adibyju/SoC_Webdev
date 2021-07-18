@@ -1,0 +1,90 @@
+/* Styling for fixed position navbar */
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  height: 120px;
+  background-image: linear-gradient(#ce2500, rgba(0, 0, 0, 81%));
+  z-index: 999;
+}
+
+nav ul {
+  float: right;
+  margin-right: 3vw;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 3vw;
+  line-height: 110px;
+}
+
+nav ul li a {
+  color: white;
+  font-family: "Microsoft Yi Baiti", "Arial", sans-serif;
+  font-size: 27px;
+  padding-bottom: 5px;
+}
+
+a.navtab:hover {
+  border-bottom: 2px solid white;
+  transition: 0.2s;
+}
+
+.izalLogo {
+  padding-left: 4vw;
+}
+
+.checkbtn {
+  font-size: 40px;
+  color: white;
+  float: right;
+  line-height: 110px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/* For responsiveness */
+@media (max-width: 730px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 226px;
+    background: linear-gradient(
+      rgba(0, 0, 0, 81%),
+      #ce2500,
+      rgba(0, 0, 0, 81%)
+    );
+    top: 120px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+  }
+
+  nav ul li a {
+    font-size: 25px;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+}

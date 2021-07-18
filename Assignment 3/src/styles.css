@@ -1,0 +1,14 @@
+/* General properties of the webpage */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(black 90%, #c32300);
+}

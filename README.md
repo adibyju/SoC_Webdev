@@ -19,4 +19,4 @@ Studied HTML, CSS and JS, but a lot more practise is required for perfection. Cu
 - W3Schools tutorials for HTML, CSS and JS
 - Youtube tutorials by Codevolution for Angular
 
->Change the world by being yourself!
+

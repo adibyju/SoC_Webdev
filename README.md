@@ -28,6 +28,8 @@ To make any creative website I can come up with using Angular.
 
 I love doing photoshop art as a hobby. So I thought why not make a website showcasing that. So I made just that. It's not perfect but I'm happy with the way it turned out.😇
 
+Assignment 3 website link - https://soc-assignment-3-adi.web.app
+
 ### Obstacles I faced :-
 
 So this one was a little tough. The CSS sometimes just does not work. It's quite a hassle. I also had problems integrating JS with Angular framework. After disturbing my mentor with a lot of doubts and googling I finally got it right. Phew!

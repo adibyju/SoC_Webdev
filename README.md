@@ -50,4 +50,4 @@ Studied HTML, CSS, JS and Angular but a lot more practise is required for perfec
 - Youtube tutorials by Hitesh Choudhary for markdown files
 - stackoverflow.com, css-tricks.com, tutorialspoint.com
 
-> Change the world by being yourself !
+> Change the world by being yourself!
